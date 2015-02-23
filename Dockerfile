@@ -29,6 +29,6 @@ ADD conf/www.conf /etc/php5/fpm/pool.d/www.conf
 ADD conf/startUp.sh /bin/startUp.sh
 RUN chmod a+x /bin/startUp.sh
 
-ADD src /usr/share/nginx/html
+#ADD src /usr/share/nginx/html
 
 CMD ["/bin/startUp.sh"]
