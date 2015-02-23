@@ -22,8 +22,8 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mkdir /etc/nginx/ssl
 
-ADD conf/nginx.key /etc/nginx/ssl/nginx.key
-ADD conf/nginx.crt /etc/nginx/ssl/nginx.crt
+#ADD conf/nginx.key /etc/nginx/ssl/nginx.key
+#ADD conf/nginx.crt /etc/nginx/ssl/nginx.crt
 ADD conf/default.conf /etc/nginx/conf.d/default.conf
 ADD conf/www.conf /etc/php5/fpm/pool.d/www.conf
 ADD conf/startUp.sh /bin/startUp.sh
