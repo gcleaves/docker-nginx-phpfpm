@@ -2,7 +2,7 @@
 # docker run --name hipbot -d -p 80 geoff-nginx-php 
 # map volume host src directory to docker /usr/share/nginx/html when running, i.e. -v src:/usr/share/nginx/html
 
-FROM nginx:1.7.7
+FROM nginx:1.9.6
 
 RUN apt-get update
 RUN apt-get install -y php5-cli php5-fpm php5-mysql php5-pgsql php5-sqlite php5-curl\
